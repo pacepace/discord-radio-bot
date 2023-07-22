@@ -1,12 +1,12 @@
 ---
 version: '3.4'
 services:
-  radio-discodon:
-    image: pace23pace/radio-discodon:latest
+  discord-radio-bot:
+    image: pace23pace/discord-radio-bot:latest
     build:
       context: .
       dockerfile: ./Dockerfile
-    container_name: radio-discodon
+    container_name: discord-radio-bot
     environment:
     - TZ=UTC
     network_mode: bridge
