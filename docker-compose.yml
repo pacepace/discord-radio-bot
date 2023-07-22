@@ -1,6 +1,15 @@
-version: '2'
-services: 
-  discord-radio-bot:
-    build: .
-    container_name: discord-radio-bot
-    restart: always
+---
+version: '3.4'
+services:
+  radio-discodon:
+    image: pace23pace/radio-discodon:latest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: radio-discodon
+    environment:
+    - TZ=UTC
+    network_mode: bridge
+    volumes:
+    - ./config.json:/app/config.json
+    restart: unless-stopped

@@ -1,0 +1,16 @@
+{
+  "radio": {
+    "stream": "YOUR_RADIO_URL",
+    "volume": 10
+  },
+
+  "discord": {
+    "token": "YOUR_BOT_TOKEN",
+    "channel": "YOUR_CHANNEL_ID"
+  },
+
+  "stream": {
+    "bufferSize": 4096,
+    "characterEncoding": "utf-8"
+  }
+}
